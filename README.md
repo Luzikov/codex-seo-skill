@@ -16,7 +16,9 @@ Comprehensive SEO skill for Codex. Review live websites, single pages, technical
 - [Who It Is For](#who-it-is-for)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
+- [Quick Prompt Guide](#quick-prompt-guide)
 - [What To Paste Into Codex](#what-to-paste-into-codex)
+- [What The Result Looks Like](#what-the-result-looks-like)
 - [What The Skill Covers](#what-the-skill-covers)
 - [What You Can Hire Me For](#what-you-can-hire-me-for)
 - [Contact](#contact)
@@ -103,6 +105,10 @@ Example:
 Use $seo to audit https://example.com and return a simple fix plan.
 ```
 
+<p align="center">
+  <img src="./assets/prompt-preview.svg" alt="Prompt preview for Codex SEO" width="100%">
+</p>
+
 ## Quick Prompt Guide
 
 | Paste Into Codex | What You Get |
@@ -115,6 +121,10 @@ Use $seo to audit https://example.com and return a simple fix plan.
 | `Use $seo to review local SEO for this business website.` | Local SEO review |
 | `Use $seo to review my Next.js codebase for SEO issues before launch.` | Pre-launch codebase SEO review |
 | `Use $seo to create an SEO plan for a SaaS company.` | SEO strategy plan |
+
+<p align="center">
+  <img src="./assets/output-preview.svg" alt="Output preview for Codex SEO" width="100%">
+</p>
 
 ## What To Paste Into Codex
 
@@ -244,6 +254,36 @@ You get:
 - SEO structure guidance;
 - a practical roadmap instead of generic advice.
 
+## What The Result Looks Like
+
+Example of the kind of result you can ask Codex to produce with this skill:
+
+```text
+Short diagnosis
+- The site is indexable, but weak page structure and missing schema are holding it back.
+
+Top issues
+- High: homepage title is too generic
+- High: pricing page has no canonical
+- Medium: sitemap includes duplicate parameter URLs
+- Medium: no Organization schema on key pages
+
+Quick wins
+- rewrite title and meta on homepage
+- add canonical to pricing and landing pages
+- clean duplicate URLs from sitemap
+- add Organization and BreadcrumbList schema
+
+Fix plan for the next 1-2 weeks
+1. fix indexing and canonical issues
+2. update key money pages
+3. add schema
+4. improve internal links and content proof
+```
+
+The point is not to generate a giant report.
+The point is to get a fix order that is easy to act on.
+
 ## What The Skill Covers
 
 ### Full Audits
@@ -316,12 +356,29 @@ Paid help can include:
 - custom report templates and prompt packs;
 - ongoing improvement and support.
 
+Good fit if you want:
+
+- someone to install and configure it for you;
+- a version tailored to your business;
+- a real audit on your actual site;
+- help turning the output into a concrete implementation plan.
+
+If you want private work, the public repository acts as the portfolio page and entry point.
+
 ## Contact
 
 If you want setup help, a custom version, or a paid audit:
 
 - GitHub profile: [@Luzikov](https://github.com/Luzikov)
 - Issues: [open an issue](https://github.com/Luzikov/codex-seo-skill/issues)
+
+For paid work, the simplest path is:
+
+1. open the repository;
+2. review what the skill does;
+3. contact me through GitHub;
+4. describe your site or project;
+5. I can then help with setup, audit, or custom adaptation.
 
 ## Repository Layout
 
@@ -346,6 +403,8 @@ If you want setup help, a custom version, or a paid audit:
 |   |-- publisher-plan.md
 |   |-- agency-plan.md
 |   |-- generic-plan.md
+|   |-- prompt-preview.svg
+|   |-- output-preview.svg
 |   `-- readme-banner.svg
 `-- LICENSE
 ```
