@@ -8,6 +8,7 @@ Comprehensive SEO skill for Codex. Review live websites, single pages, technical
 
 [![Codex Skill](https://img.shields.io/badge/Codex-Skill-0ea5e9)](https://github.com/Luzikov/codex-seo-skill)
 [![SEO](https://img.shields.io/badge/SEO-Full%20Audit-22c55e)](https://github.com/Luzikov/codex-seo-skill)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](./scripts/validate_skill.py)
 [![License: MIT](https://img.shields.io/badge/License-MIT-f5c542.svg)](./LICENSE)
 
 ## Table of Contents
@@ -25,6 +26,7 @@ Comprehensive SEO skill for Codex. Review live websites, single pages, technical
 - [Repository Layout](#repository-layout)
 - [Documentation](#documentation)
 - [Requirements](#requirements)
+- [Local Validation](#local-validation)
 - [Uninstall](#uninstall)
 - [License](#license)
 
@@ -388,6 +390,8 @@ For paid work, the simplest path is:
 |-- README.md                    # Repository landing page
 |-- agents/
 |   `-- openai.yaml              # UI metadata for Codex
+|-- scripts/
+|   `-- validate_skill.py        # Optional local Python validator
 |-- references/
 |   |-- core-web-vitals.md       # Current performance metrics and rules
 |   |-- eeat.md                  # Content quality and trust review guide
@@ -415,6 +419,7 @@ Core files:
 
 - [SKILL.md](./SKILL.md)
 - [agents/openai.yaml](./agents/openai.yaml)
+- [scripts/validate_skill.py](./scripts/validate_skill.py)
 
 Reference files:
 
@@ -441,8 +446,25 @@ Planning templates:
 - Git for install and updates
 - Internet access for live-site audits
 - Optional: a local web project for pre-launch codebase SEO reviews
+- Optional: Python 3.10+ for the local validation script
 
 Python is not required for normal usage of the skill itself.
+It is only needed if you want to run the local validator included in this repository.
+
+## Local Validation
+
+If you want to quickly check that the repository still has the expected structure:
+
+```bash
+python scripts/validate_skill.py
+```
+
+This checks:
+
+- main required files exist;
+- `SKILL.md` has the expected frontmatter;
+- `README.md` still contains the main sections;
+- `agents/openai.yaml` still contains the key interface fields.
 
 ## Uninstall
 
