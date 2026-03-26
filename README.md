@@ -103,6 +103,19 @@ Example:
 Use $seo to audit https://example.com and return a simple fix plan.
 ```
 
+## Quick Prompt Guide
+
+| Paste Into Codex | What You Get |
+|---|---|
+| `Use $seo to run a full SEO audit for <url>.` | Full site audit with priorities and fix plan |
+| `Use $seo to review the SEO of <url>.` | Single-page SEO review |
+| `Use $seo to check robots.txt, sitemap.xml, canonicals, redirects, and indexing issues on <url>.` | Technical SEO review |
+| `Use $seo to validate schema markup on <url> and show what is missing.` | Schema review and missing markup guidance |
+| `Use $seo to review whether <url> is ready for AI search and llms.txt guidance.` | AI search readiness review |
+| `Use $seo to review local SEO for this business website.` | Local SEO review |
+| `Use $seo to review my Next.js codebase for SEO issues before launch.` | Pre-launch codebase SEO review |
+| `Use $seo to create an SEO plan for a SaaS company.` | SEO strategy plan |
+
 ## What To Paste Into Codex
 
 These are the easiest prompts to start with.
